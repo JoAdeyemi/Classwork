@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width">
+    <title>JS Bin</title>
+    <script>
+        let abn = ()=>{
+            let a = parseInt(document.getElementById("a").value)
+            let b = parseInt(document.getelementById("b").value)
+            let n = parseInt(document.getElementById("n").value)
+        }
+        Let f3= (a,b,n)=>
+        {
+            let sum=0
+            for (let i=1; i<n;i++){
+                if(1 % a===0// i % b===0){
+                sum +=1;
+            }
+            Return sum
+            }
+    </script>
+</head>
+<body>
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<body>
+</html>
+        }
