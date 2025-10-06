@@ -1,17 +1,20 @@
 <html>
-    <head>
-        <title>Test Page</title>
-        function doIt() {
-            let sum = 0;
-            for (let i = 1; i < 1000; i++) {
-                if (i % 3 === 0 // i % 5 === 0) {
-                    sum += i;
-                }
+<head>
+    <script>
+        function check() {
+            let weight = parseInt(document.getElementById("weight").value);
+            if (isNaN(weight)) {
+                alert("Please enter a valid number for baggage weight.");
+            } else if (weight <= 50) {
+                alert("Baggage weight is " + weight + "kg is Allowed.");
+            } else {
+                alert("Baggage weight is " + weight + "kg is Overweight!");
             }
         }
-            alert("The sum of all multiples of 3 or 5 below 1000 is: " + sum);
-        
     </script>
-
+</head>
+<body>
+    <input type="text" id="weight">
+    <button onclick="check()">Check Baggage</button>
 </body>
 </html>
